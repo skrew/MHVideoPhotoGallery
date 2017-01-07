@@ -214,6 +214,10 @@
     self.descriptionLabel.textLabel.labelDelegate = self;
     self.descriptionLabel.textLabel.delegate = self;
     self.descriptionLabel.textLabel.UICustomization = self.UICustomization;
+	
+    self.descriptionLabel.textLabel.textColor = [UIColor whiteColor];
+    self.descriptionLabel.textLabel.textAlignment = NSTextAlignmentCenter;
+	
     [self.bottomSuperView addSubview:self.descriptionLabel];
     
     [self.descriptionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
